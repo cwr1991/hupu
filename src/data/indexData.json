@@ -1,0 +1,59 @@
+{
+    "user" : {},
+    "totalPrice":0,
+    "checked": true,
+    "shops":[
+      {
+  
+         "shopName": "京东自营",
+         "level" : 1,
+         "checked": true,
+         "totalPrice": 0,
+         "products":[
+           {
+              "pic": "http://img10.360buyimg.com/mobilecms/s200x200_jfs/t24862/205/644254331/186265/680f90bd/5b767420Na75b2153.jpg!q70.dpg",
+              "title": "1 联想Z5 6GB+64GB 极光色 6.2英寸全面屏双摄 全网通4G手机 双卡双待",
+              "price": 1088,
+              "qal" :1,
+              "checked": true,
+              "attrs" :  {"weight":10,"color":"red","ver":"1.0"}
+           },
+           {
+             "pic": "http://img10.360buyimg.com/mobilecms/s200x200_jfs/t24862/205/644254331/186265/680f90bd/5b767420Na75b2153.jpg!q70.dpg",
+             "title": "2 联想Z5 6GB+64GB 极光色 6.2英寸全面屏双摄 全网通4G手机 双卡双待",
+             "price": 3600,
+             "qal" :1,
+             "checked": true,
+             "attrs" :  {"weight":9,"color":"black","ver":"1.0"}
+           }
+         ]
+      },
+      {
+  
+        "shopName": "EAZZ启程专卖店",
+        "level" : 1,
+        "checked": true,
+        "totalPrice": 0,
+        "products":[
+          {
+            "pic": "http://img10.360buyimg.com/mobilecms/s200x200_jfs/t24862/205/644254331/186265/680f90bd/5b767420Na75b2153.jpg!q70.dpg",
+            "title": "1 【一体化铝框 11万好评】EAZZ铝框拉杆箱万向轮行李箱男女士登机箱20/24寸29寸旅行箱图案定制 高端 铝框-银色 20英寸-登机箱(热卖)",
+            "price": 228,
+            "qal" :1,
+            "checked": true,
+            "attrs" :  {"weight":20,"color":"red","ver":"1.0"}
+          },
+          {
+            "pic": "http://img10.360buyimg.com/mobilecms/s200x200_jfs/t24862/205/644254331/186265/680f90bd/5b767420Na75b2153.jpg!q70.dpg",
+            "title": "2 【一体化铝框 11万好评】EAZZ铝框拉杆箱万向轮行李箱男女士登机箱20/24寸29寸旅行箱图案定制 高端 铝框-银色 20英寸-登机箱(热卖)",
+            "price": 560,
+            "qal" :1,
+            "checked": true,
+            "attrs" :  {"weight":19,"color":"black","ver":"1.0"}
+          }
+        ]
+      }
+    ]
+  
+  }
+  

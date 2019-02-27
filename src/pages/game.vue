@@ -1,0 +1,183 @@
+<template>
+    <div>
+        <vs-header></vs-header>
+        <vs-area :data="brand"></vs-area>
+        <vs-back-top></vs-back-top>
+        <vs-footer></vs-footer>
+    </div>
+    
+</template>
+
+<script>
+import VsHeader from "../components/game/VsHeader"
+import VsArea from "../components/game/VsArea"
+import VsBackTop from "../components/CBA/VsBackTop"
+import VsFooter from "../components/index/VsFooter"
+export default {
+    components:{
+        VsHeader,
+        VsArea,
+        VsBackTop,
+        VsFooter
+    },
+    data(){
+        return{
+            brand:[
+                {
+                    brandTit:"绝地求生",
+                    brandFoot:"进入绝地求生专区查看更多",
+                    brandItem:[
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190112201314_524821472.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第三日总积分排行：ACTOZ战队夺得冠军",
+                            tag:"20亮169回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190112201143_233624382.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第三日第四局：ACTOZ战队5杀吃鸡",
+                            tag:"56亮189回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190112191358_1291986968.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第三日第三局：17战队12杀吃鸡",
+                            tag:"12亮51回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190112180058_2134432106.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第三日第二局：EntusF战队5杀吃鸡",
+                            tag:"56亮315回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190112170901_2004460531.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第三日第一局：ACTOZ战队11杀吃鸡",
+                            tag:"321亮521回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190111205259_1469498890.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第二日总积分排行：Lstars战队位列头名",
+                            tag:"84亮224回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190111205232_1740634592.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第二日第四局：EntusF战队11杀吃鸡",
+                            tag:"561亮584回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190111205217_519236918.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第二日第三局：NOVA MS战队6杀吃鸡",
+                            tag:"523亮1024回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190111180216_208252653.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第二日第二局：ACTOZ战队10杀二连鸡",
+                            tag:"600亮1449回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190111170515_1535906252.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛第二日第一局：ACTOZ战队8杀吃鸡",
+                            tag:"50亮99回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190110190334_1750565751.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛首日第三局：Lstars战队11杀吃鸡",
+                            tag:"12亮78回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190110180222_272136690.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[赛后]PAI邀请赛首日第二局：ACTOZ战队16杀吃鸡 ",
+                            tag:"02亮169回复"
+                        },
+                    ]
+                },
+                {
+                    brandTit:"王者荣耀",
+                    brandFoot:"进入王者荣耀专区查看更多",
+                    brandItem:[
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117213826_1459199088.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"1月17日虎扑花木兰守擂大赛赛果公示",
+                            tag:"13回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117162257_1872382515.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[讨论]新版本用法师走边路效果会不会更好？",
+                            tag:"7亮23回复"
+                        },
+    
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117151027_1106300319.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[讨论]诸葛亮星元皮肤特效展示，感觉如何？",
+                            tag:"321亮521回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117174700_646593830.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[讨论]你认为项羽苍穹之光的优化怎么样？",
+                            tag:"84亮224回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117175007_1019409742.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[视频]吕布天魔缭乱新增回城特效，你感觉如何？",
+                            tag:"561亮584回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117175152_850635075.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[分享]新版本宫本武藏的移速真的和蓝色超级兵一样了",
+                            tag:"523亮1024回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117151027_1106300319.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[视频]久诚秒人只需一秒，草丛杀手柠栀上线",
+                            tag:"600亮1449回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117150908_1537543860.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[讨论]牛魔现在已经是新版本T0辅助了吗？",
+                            tag:"50亮99回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190110190334_1750565751.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[讨论]大家觉得新赛季边射能回归KPL赛场吗？",
+                            tag:"12亮78回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117162257_1872382515.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[讨论]现在辅助兰陵王比S13赛季更强势了吗？ ",
+                            tag:"02亮169回复"
+                        },
+                    ]
+                },
+                {
+                    brandTit:"英雄联盟",
+                    brandFoot:"进入英雄联盟专区查看更多",
+                    brandItem:[
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190115150226_823889390.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"每天回复每天爽，回复即可参与虎扑送豪礼第四弹",
+                            tag:"13回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117201431_179442310.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"LCK赛后言论：Griffin是另一个层次的队伍",
+                            tag:"7亮23回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190118091138_1789776441.png?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"EDG发布对阵Snake赛前海报：兵临城下，风雨欲来",
+                            tag:"50亮99回复"
+                        },
+                        {
+                            img:"https://i11.hoopchina.com.cn/hupuapp/kanqiu/201901/kanqiu_0_20190117194300_237221318.jpeg?x-oss-process=image/resize,m_fill,w_172,h_130/sharpen,100",
+                            news:"[话题]大嘴站撸诺手，究竟谁能取胜？",
+                            tag:"02亮169回复"
+                        },
+                    ]
+                }
+            ]
+        }
+    }
+}
+</script>
+
+<style>
+
+</style>
